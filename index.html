@@ -41,21 +41,31 @@
     <meta name="twitter:url" content="https://cognati.tech" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Cognati - Soluções Rápidas e Eficientes</title>
   </head>
-  <body>
-    <div class="flex justify-center items-center h-fit w-fit m-auto mt-48">
-      <div
-        class="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-yellow-500"
-      ></div>
-      <img src="./logo.png" class="rounded-full h-20 w-20" />
-    </div>
-    <div class="mt-8 w-full">
-      <h1 class="text-yellow-500 font-bold text-4xl text-center">Cognati</h1>
-      <h2 class="text-yellow-800 font-thin text-xs mt-2 text-center">
-        Site em desenvolvimento
-      </h2>
-    </div>
+  <body class="min-h-screen">
+    <header class="flex justify-center items-center p-4 shadow-lg">
+      <div class="flex items-center justify-between w-full max-w-7xl">
+        <div class="flex items-center gap-2">
+          <img class="w-8 h-8" src="./logo.png" alt="logomarca Cognati" />
+          <h1 class="font-bold text-xl">Cognati</h1>
+        </div>
+        <nav class="gap-3 md:flex hidden">
+          <a class="hover:underline hover:underline-offset-4 hover:-translate-y-1" href="#">Inicio</a>
+          <a class="hover:underline hover:underline-offset-4 hover:-translate-y-1" href="#">Sobre nós</a>
+          <a class="hover:underline hover:underline-offset-4 hover:-translate-y-1" href="#">Serviços</a>
+          <!-- <a href="#">Fale conosco</a> -->
+        </nav>
+        <button
+          class="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg flex items-center gap-1"
+        >
+          <ion-icon name="logo-whatsapp" class="text-emerald-100"></ion-icon>
+          <span class="text-emerald-50">Fale consoco</span>
+        </button>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
