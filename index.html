@@ -42,10 +42,13 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Cognati - Soluções Rápidas e Eficientes</title>
   </head>
   <body class="min-h-screen">
-    <header class="flex justify-center items-center p-4 shadow-lg fixed w-full">
+    <header
+      class="flex justify-center items-center p-4 shadow-lg fixed w-full bg-slate-50"
+    >
       <div class="flex items-center justify-between w-full max-w-7xl">
         <div class="flex items-center gap-2">
           <img class="w-8 h-8" src="./logo.png" alt="logomarca Cognati" />
@@ -69,17 +72,20 @@
           >
           <!-- <a href="#">Fale conosco</a> -->
         </nav>
-        <button
+        <a
           class="px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg flex items-center gap-1"
-        >
+          href="https://wa.me/5521979317341"
+          >
           <ion-icon name="logo-whatsapp" class="text-emerald-100"></ion-icon>
           <span class="text-emerald-50">Fale conosco</span>
-        </button>
+        </a>
       </div>
     </header>
 
-    <main class="min-h-[80vh] px-1 flex items-center justify-center">
-      <div class="flex items-center justify-center gap-4">
+    <main class="min-h-[90vh] px-1 flex items-center justify-center">
+      <div
+        class="flex items-center flex-col-reverse md:flex-row mt-8 justify-center gap-4"
+      >
         <div class="max-w-lg">
           <h3 class="text-sm text-yellow-600">Digital sem complicação</h3>
           <h1 class="text-4xl font-bold text-yellow-500">
@@ -91,16 +97,58 @@
             soluções que fazem a diferença.
           </h2>
           <div>
-            <button
+            <a href="https://wa.me/5521979317341"
               class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-lg shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
             >
               Entre em Contato
-            </button>
+            </a>
           </div>
         </div>
-        <img class="w-96 rounded-lg" src="https://via.placeholder.com/500x500" />
+        <img
+          class="w-96 rounded-lg"
+          src="https://via.placeholder.com/500x500"
+        />
       </div>
     </main>
+
+    <section class="py-12">
+      <div>
+        <h2 class="text-2xl font-medium text-center text-yellow-600 mb-4">
+          Nossos Serviços
+        </h2>
+
+        <div id="services">
+          <div class="service">
+            <h3>Landingpage</h3>
+            <p>
+              Transforme visitantes em clientes com uma landing page projetada
+              para conversões.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Sistemas Web</h3>
+            <p>
+              Fortaleça sua marca online com um site institucional que reflete
+              seus valores.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Aplicativos</h3>
+            <p>
+              Leve sua ideia para a palma da mão do público com aplicativos
+              móveis personalizados.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Site institucional</h3>
+            <p>
+              Automatize processos e aumente a eficiência com sistemas web
+              desenvolvidos sob medida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
